@@ -26,6 +26,7 @@ CONFIG_MODELOS = {
     'OpenAI': {
         'modelos': ['gpt-4o-mini'],  # Apenas um modelo disponível
         'chat': ChatOpenAI
+         'max_tokens': 2048
     }
 }
 

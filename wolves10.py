@@ -412,7 +412,6 @@ def main():
             st.session_state['oracle'].grau_jurisdicao = grau_jurisdicao
             if 'chain' in st.session_state:
                 del st.session_state['chain']
-        )
         
         if st.button("Processar Documento", use_container_width=True):
             if arquivo:

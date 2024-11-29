@@ -21,27 +21,19 @@ import time
 # Configurações Globais
 TIPOS_ARQUIVOS_VALIDOS = ['Pdf']
 
+# Configurações de Modelo (apenas GPT-4o-mini)
 CONFIG_MODELOS = {
-    'Groq': {
-        'modelos': ['llama-3.1-70b-versatile', 'gemma2-9b-it', 'mixtral-8x7b-32768'],
-        'chat': ChatGroq
-    },
     'OpenAI': {
-        'modelos': ['gpt-4o-mini', 'gpt-4o', 'o1-preview', 'o1-mini'],
+        'modelos': ['gpt-4o-mini'],  # Apenas um modelo disponível
         'chat': ChatOpenAI
     }
 }
 
-# Parâmetros específicos dos modelos
+# Parâmetros específicos do modelo
 PARAMS_MODELOS = {
-    'llama-3.1-70b-versatile': {'max_tokens': 6000},
-    'gemma2-9b-it': {'max_tokens': 2048},
-    'mixtral-8x7b-32768': {'max_tokens': 2048},
-    'gpt-4o-mini': {'max_tokens': 2048},
-    'gpt-4o': {'max_tokens': 2048},
-    'o1-preview': {'max_tokens': 2048},
-    'o1-mini': {'max_tokens': 2048},
+    'gpt-4o-mini': {'max_tokens': 2048},  # Apenas configuração para o modelo usado
 }
+
 
 # Padrões para identificação de IDs no documento
 ID_PATTERNS = {

@@ -1,0 +1,8 @@
+streamlit
+langchain
+langchain-groq
+langchain-openai
+pdfplumber
+pytesseract
+pillow
+pandas

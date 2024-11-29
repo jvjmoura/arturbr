@@ -412,20 +412,6 @@ def main():
             st.session_state['oracle'].grau_jurisdicao = grau_jurisdicao
             if 'chain' in st.session_state:
                 del st.session_state['chain']
-        
-        modelo_config = st.selectbox(
-            "Provedor",
-            CONFIG_MODELOS.keys()
-        )
-        
-        modelo = st.selectbox(
-            "Modelo",
-            CONFIG_MODELOS[modelo_config]['modelos']
-        )
-        
-        api_key = st.text_input(
-            f"API Key ({modelo_config})",
-            type="password"
         )
         
         if st.button("Processar Documento", use_container_width=True):

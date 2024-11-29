@@ -25,10 +25,11 @@ TIPOS_ARQUIVOS_VALIDOS = ['Pdf']
 CONFIG_MODELOS = {
     'OpenAI': {
         'modelos': ['gpt-4o-mini'],  # Apenas um modelo disponível
-        'chat': ChatOpenAI
-         'max_tokens': 2048
+        'chat': ChatOpenAI,  # Adicionado a vírgula necessária
+        'max_tokens': 2048   # Configuração de tokens máxima
     }
 }
+
 
 # Parâmetros específicos do modelo
 PARAMS_MODELOS = {

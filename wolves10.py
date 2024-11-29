@@ -21,21 +21,17 @@ import time
 # Configurações Globais
 TIPOS_ARQUIVOS_VALIDOS = ['Pdf']
 
-# Configurações de Modelo (apenas GPT-4o-mini)
 CONFIG_MODELOS = {
     'OpenAI': {
         'modelos': ['gpt-4o-mini'],  # Apenas um modelo disponível
-        'chat': ChatOpenAI,  # Adicionado a vírgula necessária
-        'max_tokens': 2048   # Configuração de tokens máxima
+        'chat': ChatOpenAI
     }
 }
 
-
 # Parâmetros específicos do modelo
 PARAMS_MODELOS = {
-    'gpt-4o-mini': {'max_tokens': 2048},  # Apenas configuração para o modelo usado
+    'gpt-4o-mini': {'max_tokens': 2048}
 }
-
 
 # Padrões para identificação de IDs no documento
 ID_PATTERNS = {
